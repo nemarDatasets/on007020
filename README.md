@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on007020-blue)](https://doi.org/10.82901/nemar.on007020)
+
 This dataset contains de-identified resting-state EEG recordings from individuals with Parkinson’s disease (PD) and age-matched healthy control subjects. All EEG data were recorded using standard clinical EEG systems at Neurology Clinic.
 Dataset Purpose:
 This dataset was originally used to evaluate whether resting-state EEG can help distinguish subjects who were later deceased from those who remained living (mortality classification). Only de-identified EEG data and mortality labels are included.
