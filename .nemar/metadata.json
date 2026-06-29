@@ -1,30 +1,70 @@
 {
   "version": "2.0",
-  "dataset_id": "on007020",
-  "source": "openneuro",
-  "source_id": "ds007020",
+  "pipeline_stage": "validated",
   "title": "EEG Mortality Dataset in Parkinson's Disease",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Simin Jamshidi": {},
     "Arturo Espinoza": {},
     "Soura Dasgupta": {},
     "Nandakumar Narayanan": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007020.v1.0.0",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on007020",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007020",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "1.9 GB (283 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "This dataset comprises de-identified resting-state EEG recordings from individuals with Parkinson's disease and age-matched healthy controls, collected to evaluate whether EEG biomarkers can distinguish subjects with differential mortality outcomes. Recordings were acquired using standard clinical EEG systems at 500 Hz sampling rate with 10–20 electrode montage during eyes-open rest conditions. The dataset includes mortality classification labels (living/deceased) and is structured according to BIDS EEG standards, enabling investigation of EEG correlates of mortality risk and development of machine learning classification models.",
+  "methods_description": "Resting-state EEG recordings were acquired using a clinical BrainVision EEG system at 500 Hz sampling rate with standard 10–20 international electrode montage during eyes-open rest conditions. Data were recorded at the Neurology Clinic of the University of Iowa Hospitals and Clinics. All participants provided informed consent, and the publicly shared dataset is fully de-identified.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Parkinson's disease"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "mortality prediction"
+    },
+    {
+      "term": "biomarkers"
+    },
+    {
+      "term": "machine learning classification"
+    }
+  ],
+  "source_hash": "a5383c9684250bf11a7d23383c0ef642a8eae6fedfa03261e58321adacdd67f3"
 }
