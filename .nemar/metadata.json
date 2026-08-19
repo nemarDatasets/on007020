@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG Mortality Dataset in Parkinson's Disease",
+  "description": "This dataset contains de-identified resting-state EEG recordings from individuals with Parkinson's disease and age-matched healthy controls, collected to investigate whether EEG signals can predict mortality outcomes. Each subject is labeled as either 'living' or 'deceased' in the participants file, with no additional demographic or clinical information provided. The dataset is intended to support research on EEG biomarkers of mortality risk and machine learning classification approaches in Parkinson's disease populations.",
+  "methods_description": "Resting-state EEG (eyes open) was recorded using a clinical BrainVision EEG system with a standard 10-20 electrode montage at a sampling rate of 500 Hz. Data were saved in BrainVision format (.vhdr, .eeg, .vmrk) and organized according to the BIDS EEG standard.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,6 +12,30 @@
     "Soura Dasgupta": {},
     "Nandakumar Narayanan": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Parkinson Disease",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
+    },
+    {
+      "term": "Mortality",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009026"
+    },
+    {
+      "term": "resting-state"
+    },
+    {
+      "term": "biomarker classification"
+    },
+    {
+      "term": "machine learning"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007020.v1.0.0",
@@ -28,10 +54,10 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "1.9 GB (283 files)"
   ],
@@ -43,28 +69,6 @@
     ".vhdr",
     ".vmrk",
     ".yml"
-  ],
-  "description": "This dataset comprises de-identified resting-state EEG recordings from individuals with Parkinson's disease and age-matched healthy controls, collected to evaluate whether EEG biomarkers can distinguish subjects with differential mortality outcomes. Recordings were acquired using standard clinical EEG systems at 500 Hz sampling rate with 10–20 electrode montage during eyes-open rest conditions. The dataset includes mortality classification labels (living/deceased) and is structured according to BIDS EEG standards, enabling investigation of EEG correlates of mortality risk and development of machine learning classification models.",
-  "methods_description": "Resting-state EEG recordings were acquired using a clinical BrainVision EEG system at 500 Hz sampling rate with standard 10–20 international electrode montage during eyes-open rest conditions. Data were recorded at the Neurology Clinic of the University of Iowa Hospitals and Clinics. All participants provided informed consent, and the publicly shared dataset is fully de-identified.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Parkinson's disease"
-    },
-    {
-      "term": "resting-state"
-    },
-    {
-      "term": "mortality prediction"
-    },
-    {
-      "term": "biomarkers"
-    },
-    {
-      "term": "machine learning classification"
-    }
   ],
   "source_hash": "a5383c9684250bf11a7d23383c0ef642a8eae6fedfa03261e58321adacdd67f3"
 }
